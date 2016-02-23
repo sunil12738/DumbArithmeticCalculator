@@ -1,0 +1,187 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#404040"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context=".MainActivity"
+    android:gravity="bottom"
+    android:id="@+id/ll1">
+    <!--android:paddingLeft="@dimen/activity_horizontal_margin"-->
+    <!--android:paddingRight="@dimen/activity_horizontal_margin"-->
+    <!--android:paddingTop="@dimen/activity_vertical_margin"-->
+    <!--android:paddingBottom="@dimen/activity_vertical_margin"-->
+    <EditText
+        android:id="@+id/et1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:gravity="right"
+        android:hint="first number"
+        android:textColorHint="#AAAAAA"
+        android:maxLength="15"
+        android:singleLine="true"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/edittext_border"/>
+
+    <TextView
+        android:id="@+id/opr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:padding="10dp"
+        android:gravity="right"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/edittext_border"/>
+
+    <EditText
+        android:id="@+id/et2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:gravity="right"
+        android:hint="second number"
+        android:textColorHint="#AAAAAA"
+        android:maxLength="15"
+        android:singleLine="true"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/edittext_border" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:columnCount="4"
+        android:orientation="horizontal"
+        android:rowCount="5"
+        android:id="@+id/gl">
+
+        <Button
+            android:id="@+id/divide"
+            android:text="/"
+            android:background="@drawable/button_formatting"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/multiply"
+            android:text="X"
+            android:background="@drawable/button_formatting"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/subtract"
+            android:text="-"
+            android:background="@drawable/button_formatting"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/delete"
+            android:text="Del"
+            android:background="@drawable/button_formatting"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/seven"
+            android:text="7"
+            android:background="@drawable/button_formatting"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/eight"
+            android:text="8"
+            android:background="@drawable/button_formatting"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/nine"
+            android:text="9"
+            android:background="@drawable/button_formatting"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/add"
+            android:layout_rowSpan="2"
+            android:text="+"
+            android:background="@drawable/button_formatting"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/four"
+            android:text="4"
+            android:background="@drawable/button_formatting"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/five"
+            android:text="5"
+            android:background="@drawable/button_formatting"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/six"
+            android:text="6"
+            android:background="@drawable/button_formatting"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/one"
+            android:text="1"
+            android:background="@drawable/button_formatting"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/two"
+            android:text="2"
+            android:background="@drawable/button_formatting"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/three"
+            android:text="3"
+            android:background="@drawable/button_formatting"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/equal"
+            android:layout_rowSpan="2"
+            android:text="="
+            android:background="@drawable/button_formatting"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/blank"
+            android:text=""
+            android:background="@drawable/button_formatting"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/xero"
+            android:text="0"
+            android:background="@drawable/button_formatting"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/dot"
+            android:text="."
+            android:background="@drawable/button_formatting"
+            android:textColor="@color/white"/>
+
+
+    </GridLayout>
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="horizontal">-->
+    <!-- -->
+    <!--</LinearLayout>-->
+
+</LinearLayout>
